@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicantProfile">
+
+    <ImageView
+        android:id="@+id/applicantprofilebanner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/bannergrad" />
+
+    <ImageButton
+        android:id="@+id/BtnImglinkedin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/applicantprofilebanner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_linkedin" />
+
+    <ImageButton
+        android:id="@+id/BtnImgFacebook"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/applicantprofilebanner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/BtnImglinkedin"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_facebook" />
+
+    <ImageButton
+        android:id="@+id/BtnImgInstagram"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/applicantprofilebanner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/BtnImgFacebook"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_instagram" />
+
+
+    <ImageView
+        android:id="@+id/applicantprofileimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/applicantprofilebanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/person" />
+
+    <TextView
+        android:id="@+id/applicantFirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicantprofileimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="First Name"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/applicantPhonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicantFirstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/applicantemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicantPhonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ApplicantAboutme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicantemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="About Applicant"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnapplicantreject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/applicantprofilebanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/applicantprofileimg"
+        android:text="Reject" />
+
+    <EditText
+        android:id="@+id/msgField"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/ApplicantAboutme"
+        android:layout_centerInParent="true"
+        android:hint="Say Hi!"
+        />
+
+    <Button
+        android:id="@+id/msgApplicant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgField"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Send Message" />
+
+</RelativeLayout>

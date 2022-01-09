@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General">
+
+        <Preference
+            android:title="Website"
+            android:icon="@drawable/website"
+            android:key="website"
+            android:summary="Visit The Developers Website"/>
+
+        <Preference
+            android:title="About Us"
+            android:icon="@drawable/about"
+            android:key="about-us"
+            android:summary="Read More About Job Quest"/>
+
+        <Preference
+            android:title="How To Use Job Quest"
+            android:icon="@drawable/howto"
+            android:key="how_to"
+            android:summary="Watch this video demonstration on how to use Job Quest"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Job Quest App">
+
+        <Preference
+            android:title="Like The App?"
+            android:icon="@drawable/like"
+            android:key="Rate"
+            android:summary="Tell us how you feel about our application"/>
+
+        <Preference
+            android:title="Share the App"
+            android:icon="@drawable/share"
+            android:key="Share"
+            android:summary="Feel free to share Job Quest with your friends"/>
+
+        <Preference
+            android:title="Report A Bug?"
+            android:icon="@drawable/report"
+            android:key="Report"
+            android:summary="Found a Bug? Report it here"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Developer">
+
+        <Preference
+            android:title="Privacy Policy"
+            android:icon="@drawable/privacy"
+            android:key="privacy"
+            android:summary="Found a Bug? Report it here"/>
+
+        <Preference
+            android:title="FAQ"
+            android:icon="@drawable/faq"
+            android:key="faq"
+            android:summary="Frequently Asked Questions"/>
+
+        <Preference
+            android:title="Contact Us"
+            android:icon="@drawable/contact"
+            android:key="contact"
+            android:summary="Leave A Message"/>
+
+        <Preference
+            android:title="Version"
+            android:summary="Version 0.994"
+            android:key="app_version"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

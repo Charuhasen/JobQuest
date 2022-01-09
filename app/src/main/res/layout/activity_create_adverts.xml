@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createAdverts">
+
+    <TextView
+        android:id="@+id/txtviewnewadvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Advert"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/txtviewnewadvert"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+       />
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_border"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        />
+
+    <EditText
+        android:id="@+id/titleofad"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Title of Ad"
+        android:inputType="textPersonName"
+        android:background="@drawable/round_border"
+        android:layout_below="@+id/dropdown"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/nameofindcmp"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Individual / Company Name"
+        android:inputType="textPersonName"
+        android:background="@drawable/round_border"
+        android:layout_below="@+id/titleofad"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/descriptionofad"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:background="@drawable/round_border"
+        android:layout_below="@+id/nameofindcmp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="19dp"
+        />
+
+    <EditText
+        android:id="@+id/priceofad"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Price(GHC)"
+        android:inputType="number"
+        android:background="@drawable/round_border"
+        android:layout_below="@+id/descriptionofad"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Post"
+        android:layout_below="@+id/priceofad"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_border"
+        />
+
+
+</RelativeLayout>
